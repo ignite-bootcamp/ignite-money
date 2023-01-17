@@ -6,7 +6,7 @@ export function Header() {
       <div className="w-full max-w-[1120px] mx-auto px-6 flex justify-between items-center`">
         <img src={igniteLogo} alt="" />
         <button
-          className="h-[50px] border-none bg-emerald-500 text-white font-bold px-5 rounded-md cursor-pointer hover:bg-emerald-700 transition"
+          className="h-[50px] border-none bg-emerald-600 text-white font-bold px-5 rounded-md cursor-pointer hover:bg-emerald-700 transition"
           type="button"
         >
           Nova transação
