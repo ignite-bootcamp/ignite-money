@@ -1,6 +1,7 @@
 import classNames from 'classnames'
 import { Header } from '../components/Header'
 import { Summary } from '../components/Summary'
+import { SearchForm } from './components/SearchForm'
 
 export function Transactions() {
   return (
@@ -9,6 +10,7 @@ export function Transactions() {
       <Summary />
 
       <main className="mx-auto max-w-[1120px] w-full px-6 mt-16">
+        <SearchForm />
         <table className="w-full mt-6">
           <tbody>
             <tr>
