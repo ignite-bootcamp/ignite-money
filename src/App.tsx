@@ -1,5 +1,7 @@
+import { Transactions } from './pages/Transactions'
+
 function App() {
-  return <h1>teste</h1>
+  return <Transactions />
 }
 
 export default App
