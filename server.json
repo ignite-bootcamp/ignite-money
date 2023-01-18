@@ -15,6 +15,30 @@
       "category": "Mercado",
       "price": 1500,
       "createdAt": "2023-01-12T14:05:15.901Z"
+    },
+    {
+      "description": "Coxinha",
+      "price": 30,
+      "category": "Comida",
+      "type": "outcome",
+      "createdAt": "2023-01-18T19:32:50.218Z",
+      "id": 2
+    },
+    {
+      "description": "Pamonha",
+      "price": 2,
+      "category": "Comida",
+      "type": "outcome",
+      "createdAt": "2023-01-18T19:42:24.839Z",
+      "id": 3
+    },
+    {
+      "description": "Banana",
+      "price": 1,
+      "category": "Comida",
+      "type": "outcome",
+      "createdAt": "2023-01-18T19:44:15.811Z",
+      "id": 4
     }
   ]
 }
