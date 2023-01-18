@@ -1,5 +1,6 @@
 import * as Dialog from '@radix-ui/react-dialog'
 import igniteLogo from '../assets/ignite-logo.svg'
+import { NewTransactionModal } from './NewTransactionModal'
 
 export function Header() {
   return (
@@ -11,13 +12,7 @@ export function Header() {
             <span>Nova transação</span>
           </Dialog.Trigger>
 
-          <Dialog.Portal>
-            <Dialog.Overlay />
-            <Dialog.Content>
-              <Dialog.Title>Nova transação</Dialog.Title>
-              <Dialog.Close />
-            </Dialog.Content>
-          </Dialog.Portal>
+          <NewTransactionModal />
         </Dialog.Root>
       </div>
     </header>
