@@ -3,6 +3,7 @@ import { useContext } from 'react'
 import { Header } from '../components/Header'
 import { Summary } from '../components/Summary'
 import { TransactionsContext } from '../context/TransactionsContext'
+import { dateFormatter, priceFormatter } from '../utils/formatter'
 import { SearchForm } from './components/SearchForm'
 
 export function Transactions() {
@@ -31,13 +32,14 @@ export function Transactions() {
                     'text-red-400': transaction.type === 'outcome',
                   })}
                 >
-                  {transaction.price}
+                  {transaction.type === 'outcome' && '- '}
+                  {priceFormatter.format(transaction.price)}
                 </td>
                 <td className="py-5 px-8 bg-neutral-700">
                   {transaction.category}
                 </td>
                 <td className="py-5 px-8 bg-neutral-700 rounded-tr-md rounded-br-md">
-                  {transaction.createdAt}
+                  {dateFormatter.format(new Date(transaction.createdAt))}
                 </td>
               </tr>
             ))}
