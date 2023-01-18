@@ -1,0 +1,20 @@
+{
+  "transactions": [
+    {
+      "id": 1,
+      "description": "Desenvolvimento de site",
+      "type": "income",
+      "category": "Trabalho",
+      "price": 14000,
+      "createdAt": "2023-01-18T18:05:15.901Z"
+    },
+    {
+      "id": 1,
+      "description": "Feira",
+      "type": "outcome",
+      "category": "Mercado",
+      "price": 1500,
+      "createdAt": "2023-01-12T14:05:15.901Z"
+    }
+  ]
+}
