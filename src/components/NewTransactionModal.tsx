@@ -1,4 +1,5 @@
 import * as Dialog from '@radix-ui/react-dialog'
+import * as RadioGroup from '@radix-ui/react-radio-group'
 import { X } from 'phosphor-react'
 
 export function NewTransactionModal() {
@@ -28,6 +29,21 @@ export function NewTransactionModal() {
             required
           />
 
+          <RadioGroup.Root className="grid grid-cols-2 gap-4 mt-2">
+            <RadioGroup.Item
+              value="income"
+              className="bg-neutral-700 flex items-center justify-center gap-2 rounded-md cursor-pointer text-gray-100 p-4 radix-state-checked:bg-emerald-500 radix-state-checked:text-white"
+            >
+              Entrada
+            </RadioGroup.Item>
+            <RadioGroup.Item
+              value="outcome"
+              className="bg-neutral-700 flex items-center justify-center gap-2 rounded-md cursor-pointer text-gray-100 p-4 radix-state-checked:bg-red-500 radix-state-checked:text-white"
+            >
+              Saída
+            </RadioGroup.Item>
+          </RadioGroup.Root>
+
           <button
             className="h-[58px] border-none bg-emerald-600 text-white font-bold px-5 rounded-md mt-6 cursor-pointer hover:bg-emerald-700 transition"
             type="submit"
@@ -35,7 +51,7 @@ export function NewTransactionModal() {
             Cadastrar
           </button>
         </form>
-        <Dialog.Close className="absolute border-none bg-transparent top-6 right-6 cursor-pointer text-gray-500 leading-[0]">
+        <Dialog.Close className="absolute border-none bg-transparent top-6 right-6 cursor-pointer text-gray-500 leading-[0`]">
           <X size={24} />
         </Dialog.Close>
       </Dialog.Content>
